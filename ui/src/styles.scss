@@ -68,7 +68,7 @@ $teal1: #e6ffff;
 }
 
 .rotate-left{
-  animation: rotate-left 1s linear 0s 1 normal none;
+  animation: rotate-left .1s linear 0s 1 normal none;
 }
 
 @keyframes dropdown{
@@ -80,6 +80,6 @@ $teal1: #e6ffff;
 }
 
 .dropdown{
-  animation: dropdown .75s linear 0s 1;
+  animation: dropdown .2s linear 0s 1;
   overflow: hidden;
 }

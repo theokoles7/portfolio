@@ -11,6 +11,7 @@ export class NavComponent implements OnInit {
 
   navigate(url: string): void{
     this.router.navigateByUrl(url);
+    this.open = false;
   }
 
   constructor(
