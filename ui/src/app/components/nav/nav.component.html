@@ -1,0 +1,35 @@
+<div class="outer">
+
+  <div class="left">
+
+    <h1 class="fade-in" (click)="navigate('')">Gabriel C. Trahan</h1>
+
+  </div>
+
+  <div class="right">
+
+    <button type="button" class="nav-btn" (click)="navigate('about')">About</button>
+
+    <button type="button" class="nav-btn" (click)="navigate('projects')">Projects</button>
+
+    <button type="button" class="nav-btn" (click)="navigate('contact')">Contact</button>
+
+    <button type="button" class="btn-grp" (click)="open = !open">
+      <i class="bi bi-three-dots rotate-right" *ngIf="!open"></i>
+
+      <i class="bi bi-three-dots-vertical rotate-left" *ngIf="open"></i>
+    </button>
+
+  </div>
+
+  <div class="dropdown" [ngClass]="open ? 'dropdown' : ''" *ngIf="open">
+  
+    <button type="button" class="drop-btn" (click)="navigate('about')">About</button>
+  
+    <button type="button" class="drop-btn" (click)="navigate('projects')">Projects</button>
+  
+    <button type="button" class="drop-btn" (click)="navigate('contact')">Contact</button>
+  
+  </div>
+
+</div>
