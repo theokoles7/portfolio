@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'gt-footer',
@@ -7,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  navigate(url: string): void{
+    this.router.navigateByUrl(url);
+  }
+
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
   }
