@@ -83,7 +83,7 @@ div.outer{
           box-shadow: 0px 0px 10px 10px rgba($teal4, .5);
         }
   
-        @media only screen and (max-width: 1024px){
+        @media only screen and (max-width: 768px){
           display: none;
         }
       }
@@ -99,7 +99,7 @@ div.outer{
           display: block;
         }
   
-        @media only screen and (max-width: 1024px){
+        @media only screen and (max-width: 768px){
           display: unset;
           font-size: 5vw;
         }
