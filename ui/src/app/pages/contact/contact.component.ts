@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private http: HttpClient
+  ) { }
 
   ngOnInit(): void {
+
+    this.http.post("https://formspree.io/f/mlezazoj", {"email": "gabrieltrahan777@hotmail.com", "message": "asdkgfjhasdgljaskdfg"});
   }
 
 }

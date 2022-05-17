@@ -6,44 +6,48 @@
 
   </div>
 
-  <div class="middle">
+  <form action="https://formspree.io/f/mlezazoj" method="POST">
 
-    <div class="field-grp">
+    <div class="middle">
 
-      <div class="field" id="name">
-  
-        <h3 class="field-label">Name:</h3>
-  
-        <input class="field-input" placeholder="Iron Man">
-  
+      <div class="field-grp">
+
+        <div class="field" id="name">
+
+          <h3 class="field-label">Name:</h3>
+
+          <input type="text" name="name" class="field-input" placeholder="Iron Man">
+
+        </div>
+
+        <div class="field" id="email">
+
+          <h3 class="field-label">E-mail:</h3>
+
+          <input type="email" name="email" class="field-input" placeholder="tony@starkindustries.net">
+
+        </div>
+
       </div>
-  
-      <div class="field" id="email">
-  
-        <h3 class="field-label">E-mail:</h3>
-  
-        <input class="field-input" placeholder="tony@starkindustries.net">
-  
+
+      <div class="field" id="message">
+
+        <h3 class="field-label">Message:</h3>
+
+        <textarea name="message" class="field-input" placeholder="I <3 u 3000" rows="5"></textarea>
+
       </div>
 
     </div>
 
-    <div class="field" id="message">
+    <div class="lower">
 
-      <h3 class="field-label">Message:</h3>
+      <button type="button" id="clear">Clear</button>
 
-      <textarea class="field-input" placeholder="I <3 u 3000" rows="5"></textarea>
+      <button type="submit" id="send">Send</button>
 
     </div>
 
-  </div>
-
-  <div class="lower">
-
-    <button type="button" id="clear">Clear</button>
-
-    <button type="button" id="send">Send</button>
-
-  </div>
+  </form>
 
 </div>
