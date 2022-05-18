@@ -38,6 +38,8 @@ div.outer{
 
       &:hover{
         cursor: pointer;
+        -webkit-text-stroke: .25px rgba($teal2, .7);
+        text-shadow: .025em .025em 40px rgba($teal2, .7);
       }
 
       @media only screen and (max-width: 768px){
