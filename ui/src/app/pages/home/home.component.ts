@@ -6,6 +6,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  projects: Array<any> = [
+    {
+      "name": "Portfolio",
+      "description": "My personal portfolio website",
+      "url": "portfolio"
+    },
+    {
+      "name": "Dr. Sudoku",
+      "description": "Suite of Sudoku-solving algorithms",
+      "url": "drsudoku"
+    },
+    {
+      "name": "Quizzler",
+      "description": "Trivia game to test your knowledge",
+      "url": "quizzler"
+    },
+  ]
 
   constructor() { }
 

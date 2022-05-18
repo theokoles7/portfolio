@@ -12,6 +12,11 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { ArtComponent } from './pages/art/art.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LicenseComponent } from './components/license/license.component';
+import { PortfolioComponent } from './pages/projects/portfolio/portfolio.component';
+import { QuizzlerComponent } from './pages/projects/quizzler/quizzler.component';
+import { DrSudokuComponent } from './pages/projects/dr-sudoku/dr-sudoku.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { ProjectBlockComponent } from './components/project-block/project-block.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +28,12 @@ import { LicenseComponent } from './components/license/license.component';
     ContactComponent,
     ArtComponent,
     FooterComponent,
-    LicenseComponent
+    LicenseComponent,
+    PortfolioComponent,
+    QuizzlerComponent,
+    DrSudokuComponent,
+    NotFoundComponent,
+    ProjectBlockComponent
   ],
   imports: [
     BrowserModule,
