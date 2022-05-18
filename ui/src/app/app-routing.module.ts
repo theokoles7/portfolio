@@ -6,10 +6,7 @@ import { ArtComponent } from './pages/art/art.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
-import { DrSudokuComponent } from './pages/projects/dr-sudoku/dr-sudoku.component';
-import { PortfolioComponent } from './pages/projects/portfolio/portfolio.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
-import { QuizzlerComponent } from './pages/projects/quizzler/quizzler.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -18,9 +15,6 @@ const routes: Routes = [
   {path: 'art', component: ArtComponent},
   {path: 'contact', component: ContactComponent},
   {path: 'license', component: LicenseComponent},
-  {path: 'portfolio', component: PortfolioComponent},
-  {path: 'quizzler', component: QuizzlerComponent},
-  {path: 'drsudoku', component: DrSudokuComponent},
   {path: '**', component: NotFoundComponent}
 ];
 

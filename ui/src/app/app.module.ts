@@ -12,9 +12,6 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { ArtComponent } from './pages/art/art.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LicenseComponent } from './components/license/license.component';
-import { PortfolioComponent } from './pages/projects/portfolio/portfolio.component';
-import { QuizzlerComponent } from './pages/projects/quizzler/quizzler.component';
-import { DrSudokuComponent } from './pages/projects/dr-sudoku/dr-sudoku.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { ProjectBlockComponent } from './components/project-block/project-block.component';
 import { NewsBlockComponent } from './components/news-block/news-block.component';
@@ -30,9 +27,6 @@ import { NewsBlockComponent } from './components/news-block/news-block.component
     ArtComponent,
     FooterComponent,
     LicenseComponent,
-    PortfolioComponent,
-    QuizzlerComponent,
-    DrSudokuComponent,
     NotFoundComponent,
     ProjectBlockComponent,
     NewsBlockComponent
