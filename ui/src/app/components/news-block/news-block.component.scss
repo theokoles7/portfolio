@@ -1,0 +1,68 @@
+@import "../../../styles.scss";
+
+div.outer{
+  background-color: rgba($black, .5);
+  box-shadow: 0px 0px 5px 5px rgba($black, .5);
+  width: 100%;
+  margin-top: 15px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: top;
+
+  div.inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+
+  h3.name{
+    margin: 0;
+    padding-left: 3%;
+    width: 100%;
+
+    font-family: Type;
+    font-size: 1.5vw;
+    text-shadow: 0px 0px 10px $teal4;
+  
+    @media only screen and (max-width: 768px){
+      font-size: 5vw;
+      margin-bottom: 1%;
+    }
+  }
+
+  p.description{
+    margin: 0;
+    padding-left: 2%;
+
+    font-family: Type;
+    font-size: 1em;
+    color: $gray1;
+  
+    @media only screen and (max-width: 768px){
+      font-size: .75em;
+      width: 100%;
+    }
+  }
+
+  a{
+    border: none;
+    background-color: transparent;
+    color: $black;
+    font-size: 3em;
+    margin-right: 1%;
+    margin-left: 1%;
+  
+    @media only screen and (max-width: 768px){
+      font-size: 2em;
+    }
+
+    i:hover{
+      cursor: pointer;
+      text-shadow: 0px 0px 10px $teal3;
+    }
+  }
+}

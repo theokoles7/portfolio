@@ -17,6 +17,7 @@ import { QuizzlerComponent } from './pages/projects/quizzler/quizzler.component'
 import { DrSudokuComponent } from './pages/projects/dr-sudoku/dr-sudoku.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { ProjectBlockComponent } from './components/project-block/project-block.component';
+import { NewsBlockComponent } from './components/news-block/news-block.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ProjectBlockComponent } from './components/project-block/project-block.
     QuizzlerComponent,
     DrSudokuComponent,
     NotFoundComponent,
-    ProjectBlockComponent
+    ProjectBlockComponent,
+    NewsBlockComponent
   ],
   imports: [
     BrowserModule,
