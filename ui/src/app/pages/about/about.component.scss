@@ -45,6 +45,11 @@ div.outer{
     p.section-content{
       text-indent: 20pt;
       font-family: Type;
+      font-size: larger;
+
+      @media only screen and (max-width: 768px){
+        font-size: unset;
+      }
     }
 
     div.list{
@@ -70,9 +75,11 @@ div.outer{
         list-style-type: none;
         margin: 0;
         column-count: 3;
+        font-size: larger;
 
         @media only screen and (max-width: 768px){
           column-count: 2;
+          font-size: unset;
         }
       }
     }

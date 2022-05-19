@@ -105,10 +105,12 @@ div.outer{
 
         p.section-content{
           font-family: Type;
+          font-size: larger;
           columns: 2;
   
           @media only screen and (max-width: 768px){
             columns: 1;
+            font-size: unset;
           }
 
           a.link{
