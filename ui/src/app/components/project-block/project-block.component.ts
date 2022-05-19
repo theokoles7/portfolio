@@ -10,9 +10,10 @@ export class ProjectBlockComponent implements OnInit {
   @Input() name!: string;
   @Input() description!: string;
   @Input() url!: string;
+  @Input() frag!: string;
 
-  navigate(url: string): void{
-    this.router.navigateByUrl(url);
+  navigate(): void{
+    this.router.navigate(['projects'], {fragment: this.frag});
   }
 
   constructor(

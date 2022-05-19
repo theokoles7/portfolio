@@ -10,17 +10,17 @@ export class HomeComponent implements OnInit {
     {
       "name": "Portfolio",
       "description": "My personal portfolio website",
-      "url": "projects#portfolio"
+      "frag": "portfolio"
     },
     {
       "name": "Dr. Sudoku",
       "description": "Suite of Sudoku-solving algorithms",
-      "url": "projects#drsudoku"
+      "frag": "drsudoku"
     },
     {
       "name": "Quizzler",
       "description": "Trivia game to test your knowledge",
-      "url": "projects#quizzler"
+      "frag": "quizzler"
     },
   ]
 

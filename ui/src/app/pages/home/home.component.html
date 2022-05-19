@@ -16,14 +16,10 @@
 
       <h2 class="sec-header">LATEST PROJECTS</h2>
 
-      <p class="sec-content">
-        Checkout what I'm working on:
-      </p>
-
       <div class="project-list">
 
         <ng-container *ngFor="let p of projects">
-          <gt-project-block [name]="p.name" [description]="p.description" [url]="p.url"></gt-project-block>
+          <gt-project-block [name]="p.name" [description]="p.description" [frag]="p.frag"></gt-project-block>
         </ng-container>
 
       </div>
