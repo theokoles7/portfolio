@@ -116,7 +116,7 @@ div.outer{
 
     button{
       font-family: Dutch;
-      -webkit-text-stroke: .4px $gray2;
+      -webkit-text-stroke: 1px $gray2;
 
       border: none;
       border-radius: .25em;
@@ -138,7 +138,7 @@ div.outer{
       @media only screen and (max-width: 768px){
         width: 49%;
         margin-right: 0;
-        font-size: 7vw;
+        font-size: 9vw;
       }
     }
   }
