@@ -15,6 +15,7 @@ import { LicenseComponent } from './components/license/license.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { ProjectBlockComponent } from './components/project-block/project-block.component';
 import { NewsBlockComponent } from './components/news-block/news-block.component';
+import { ArtBlockComponent } from './components/art-block/art-block.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { NewsBlockComponent } from './components/news-block/news-block.component
     LicenseComponent,
     NotFoundComponent,
     ProjectBlockComponent,
-    NewsBlockComponent
+    NewsBlockComponent,
+    ArtBlockComponent
   ],
   imports: [
     BrowserModule,

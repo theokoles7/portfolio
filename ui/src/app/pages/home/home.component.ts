@@ -24,6 +24,24 @@ export class HomeComponent implements OnInit {
     },
   ]
 
+  art: Array<any> = [
+    {
+      "name": "Cyclops Robot",
+      "description": "Bored-at-work-doodle 1",
+      "frag": "cyclops"
+    },
+    {
+      "name": "Smiley Spider",
+      "description": "Bored-at-work-doodle 2",
+      "frag": "spider"
+    },
+    {
+      "name": "Snake Noir",
+      "description": "Practicing with sketch markers",
+      "frag": "snake"
+    },
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
