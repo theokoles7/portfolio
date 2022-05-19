@@ -21,7 +21,7 @@ div.outer{
     align-items: center;
 
     @media only screen and (max-width: 768px){
-      min-width: 75%;
+      min-width: 80%;
     }
 
     h1{
@@ -44,6 +44,7 @@ div.outer{
 
       @media only screen and (max-width: 768px){
         -webkit-text-stroke-width: .25px;
+        text-shadow: .025em .025em 40px rgba($teal2, .8);
         font-size: 12vw;
       }
     }
@@ -57,7 +58,7 @@ div.outer{
     align-items: center;
 
     @media only screen and (max-width: 768px){
-      min-width: 25%;
+      min-width: 20%;
       justify-content: center;
     }
 
@@ -92,7 +93,7 @@ div.outer{
       }
 
       &.btn-grp{
-        background-color: $teal5;
+        background-color: rgba($teal2, .3);
         color: $gray1;
         display: none;
         padding-top: .25em;
