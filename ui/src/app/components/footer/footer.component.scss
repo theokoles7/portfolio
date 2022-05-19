@@ -1,6 +1,7 @@
 @import "../../../styles.scss";
 
 div.outer{
+  background-color: $black;
   border-top:  double .5vw rgba($gray2, .3);
 
   width: 99.9%;
