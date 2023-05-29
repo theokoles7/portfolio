@@ -1,0 +1,9 @@
+@import "../../../styles.scss";
+
+div.wrapper{
+    padding: .25em;
+
+    ul.child-list{
+        list-style-type: none;
+    }
+}

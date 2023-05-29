@@ -1,0 +1,54 @@
+@import "../../../styles.scss";
+
+div.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    min-width: 100%;
+
+    button.side-nav-button{
+        background-color: transparent;
+        border: none;
+    
+        color: $gray3;
+        font-family: regular_text;
+        font-size: 1.75em;
+
+        transition: all 0.5s ease-in-out;
+    }
+
+    div.line{
+        background-color: $gray3;
+        width: 2px;
+
+        transition: all 0.5s ease-in-out;
+    }
+    
+    &:hover{
+        cursor: pointer;
+
+        button.side-nav-button{
+            cursor: pointer;
+            color: $gray2;
+        }
+
+        div.line{
+            cursor: pointer;
+            background-color: $gray2;
+        }
+    }
+
+    &.active{
+
+        button.side-nav-button{
+            color: $gray1;
+            text-shadow: 0 0 1px $gray2;
+        }
+
+        div.line{
+            background-color: $gray1;
+            box-shadow: 0 0 2px 1px $gray2;
+        }
+    }
+}

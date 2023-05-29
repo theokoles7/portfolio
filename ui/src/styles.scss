@@ -42,14 +42,3 @@ $lilac: #ececec;
 *{
   font-family: regular_text;
 }
-
-.glow-on-hover:hover{
-  color: #f9f9f3;
-  -text-webkit-stroke: solid 3px #a8440f;
-  text-shadow: 
-    0 0 5px #f3ddac,
-    0 0 10px #ffc124, 
-    0 0 15px #a8440f, 
-    0 0 20px #852e0e;
-  transition: color 0.25s ease-out, text-shadow 0.25s ease-out;
-}

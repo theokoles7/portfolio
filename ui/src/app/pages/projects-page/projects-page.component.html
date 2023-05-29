@@ -1,1 +1,9 @@
-<p>projects-page works!</p>
+<div class="frame">
+
+    <gt-side-nav-bar [children]="children"></gt-side-nav-bar>
+
+    <div [@triggerName]="prepareRoute(outlet)">
+        <router-outlet #outlet="outlet"></router-outlet>
+    </div>
+
+</div>

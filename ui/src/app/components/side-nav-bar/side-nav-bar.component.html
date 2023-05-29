@@ -1,0 +1,16 @@
+<div class="wrapper">
+
+    <ul class="child-list">
+
+        <li class="child" *ngFor="let child of children">
+
+            <gt-side-nav-button
+                [name]="child.name"
+                [context]="child.context"
+            ></gt-side-nav-button>
+
+        </li>
+
+    </ul>
+
+</div>
