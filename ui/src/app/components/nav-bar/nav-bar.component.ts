@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'gt-nav-bar',
@@ -7,15 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
   pages = [
-    {name: 'About',    context: '/about', sections: ['Vita', 'Resume']},
-    {name: 'Research', context: '/research', sections: ['Machine Learning']},
-    {name: 'Projects', context: '/projects', sections: ['Quizzler', 'Dr. Sudoku', 'Door Alarm']},
-    {name: 'Contact',  context: '/contact', sections: []}
+    {name: 'About',    context: '/about'},
+    {name: 'Research', context: '/research'},
+    {name: 'Projects', context: '/projects'},
+    {name: 'Contact',  context: '/contact'}
   ]
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  navigate():void{
+    this.router.navigateByUrl("");
   }
 
 }
