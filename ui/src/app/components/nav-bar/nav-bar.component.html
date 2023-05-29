@@ -1,0 +1,22 @@
+<div class="nav-bar">
+
+    <div class="nav-left">
+
+        <h1 class="name" routerLink="/">Gabriel C. Trahan</h1>
+
+    </div>
+
+    <div class="nav-right">
+
+        <ng-container *ngFor="let page of pages">
+            <gt-nav-button
+                [name]= "page.name"
+                [context]= "page.context"
+            ></gt-nav-button>
+        </ng-container>
+
+    </div>
+
+</div>
+
+<div style="height:1000px"></div>

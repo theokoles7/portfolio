@@ -1,0 +1,46 @@
+@import "../../../styles.scss";
+
+div.nav-bar{
+    display: flex;
+    flex-direction: row;
+
+    max-width: 90%;
+    margin: 0 auto;
+    padding: .25em;
+    border-bottom: $gray1 double 7px;
+
+    div.nav-left{
+        display: flex;
+        flex-direction: row;
+    
+        width: 40%;
+        padding: .25em;
+
+        h1.name{
+            font-family: gothic_sketch;
+            font-size: 5em;
+            font-weight: 100;
+            text-align: center;
+            color: $gray1;
+
+            &:hover{
+                cursor: pointer;
+                color: $white;
+                text-shadow: 0 0 10px $mint;
+                transition: color 0.5s ease-in, text-shadow 0.5s ease-out;
+            }
+
+            margin: 0;
+        }
+    }
+
+    div.nav-right{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    
+        width: 60%;
+        padding: .25em;
+    }
+}

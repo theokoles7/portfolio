@@ -1,0 +1,18 @@
+@import "../../../styles.scss";
+
+button.nav-button{
+    background-color: transparent;
+    border: none;
+
+    color: $gray1;
+    font-family: primary;
+    font-size: 2em;
+    font-weight: bold;
+
+    &:hover{
+        cursor: pointer;
+        // color: $white;
+        // text-shadow: 0 0 20px $mint;
+        // transition: color 0.5s ease-in, text-shadow 0.5s ease-out;
+    }
+}

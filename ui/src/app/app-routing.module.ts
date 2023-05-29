@@ -1,25 +1,18 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LicenseComponent } from './components/license/license.component';
-import { AboutComponent } from './pages/about/about.component';
-import { ArtComponent } from './pages/art/art.component';
-import { ContactComponent } from './pages/contact/contact.component';
-import { HomeComponent } from './pages/home/home.component';
-import { NotFoundComponent } from './pages/not-found/not-found.component';
-import { ProjectsComponent } from './pages/projects/projects.component';
+import { MainPageComponent } from './pages/main-page/main-page.component';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'about', component: AboutComponent},
-  {path: 'projects', component: ProjectsComponent},
-  {path: 'art', component: ArtComponent},
-  {path: 'contact', component: ContactComponent},
-  {path: 'license', component: LicenseComponent},
-  {path: '**', component: NotFoundComponent}
+  {path: '', component: MainPageComponent},
+  {path: 'about', component: MainPageComponent},
+  {path: 'research', component: MainPageComponent},
+  {path: 'projects', component: MainPageComponent},
+  {path: 'contact', component: MainPageComponent},
+  {path: '**', component: MainPageComponent}
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {anchorScrolling: 'enabled'})],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
