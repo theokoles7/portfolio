@@ -10,6 +10,7 @@ import { VitaPageComponent } from './pages/vita-page/vita-page.component';
 import { HistoryPageComponent } from './pages/history-page/history-page.component';
 import { QuizzlerPageComponent } from './pages/quizzler-page/quizzler-page.component';
 import { DrSudokuPageComponent } from './pages/dr-sudoku-page/dr-sudoku-page.component';
+import { LicensePageComponent } from './pages/license-page/license-page.component';
 
 const routes: Routes = [
   {path: 'main', component: MainPageComponent, data: {animationState: 'One'}},
@@ -25,6 +26,7 @@ const routes: Routes = [
     {path: '', redirectTo: 'quizzler', pathMatch: 'full'}
   ]},
   {path: 'contact', component: ContactPageComponent, data: {animationState: 'Five'}},
+  {path: 'license', component: LicensePageComponent, data: {animationState: 'Six'}},
   {path: '', redirectTo: 'main', pathMatch: 'full'},
   {path: '**', component: ErrorPageComponent}
 ];

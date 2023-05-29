@@ -5,6 +5,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { NavButtonComponent } from './nav-button/nav-button.component';
 import { SideNavBarComponent } from './side-nav-bar/side-nav-bar.component';
 import { SideNavButtonComponent } from './side-nav-button/side-nav-button.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -13,7 +14,8 @@ import { SideNavButtonComponent } from './side-nav-button/side-nav-button.compon
     NavBarComponent,
     NavButtonComponent,
     SideNavBarComponent,
-    SideNavButtonComponent
+    SideNavButtonComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
@@ -22,7 +24,8 @@ import { SideNavButtonComponent } from './side-nav-button/side-nav-button.compon
   exports: [
     NavBarComponent,
     NavButtonComponent,
-    SideNavBarComponent
+    SideNavBarComponent,
+    FooterComponent
   ]
 })
 export class ComponentsModule { }
