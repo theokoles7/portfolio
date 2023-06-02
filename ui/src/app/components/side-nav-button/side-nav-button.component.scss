@@ -13,7 +13,8 @@ div.wrapper{
     
         color: $gray3;
         font-family: regular_text;
-        font-size: 1.75em;
+        font-size: 1.25em;
+        white-space: nowrap;
 
         transition: all 0.5s ease-in-out;
     }
@@ -30,25 +31,25 @@ div.wrapper{
 
         button.side-nav-button{
             cursor: pointer;
-            color: $gray2;
+            color: $gray1;
         }
 
         div.line{
             cursor: pointer;
-            background-color: $gray2;
+            background-color: $gray1;
         }
     }
 
     &.active{
 
         button.side-nav-button{
-            color: $gray1;
-            text-shadow: 0 0 1px $gray2;
+            color: $white;
+            text-shadow: 0 0 1px $gray1;
         }
 
         div.line{
-            background-color: $gray1;
-            box-shadow: 0 0 2px 1px $gray2;
+            background-color: $white;
+            box-shadow: 0 0 2px 1px $gray1;
         }
     }
 }
