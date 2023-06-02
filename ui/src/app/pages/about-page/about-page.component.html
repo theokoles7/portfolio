@@ -2,6 +2,8 @@
 
     <gt-side-nav-bar [children]="children"></gt-side-nav-bar>
 
-    <router-outlet></router-outlet>
+    <div class="router-outlet" [@triggerName]="prepareRoute(outlet)">
+        <router-outlet #outlet="outlet"></router-outlet>
+    </div>
 
 </div>
