@@ -4,21 +4,21 @@ button.nav-button{
     background-color: transparent;
     border: none;
 
-    color: $gray3;
+    color: $gray2;
     font-family: primary;
-    font-size: 2em;
+    font-size: 1em;
     font-weight: bold;
 
     transition: all 0.5s ease-in-out;
 
     &:hover{
         cursor: pointer;
-        color: $gray2;
+        color: $gray1;
         text-shadow: 0 0 2px $gray2;
     }
 
     &.active{
-        color: $gray1;
-        text-shadow: 0 0 2px $gray2;
+        color: $white;
+        text-shadow: 0 0 2px $gray1;
     }
 }

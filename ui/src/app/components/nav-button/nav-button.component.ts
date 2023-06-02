@@ -15,8 +15,4 @@ export class NavButtonComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  navigate():void{
-    this.router.navigateByUrl(this.context);
-  }
-
 }

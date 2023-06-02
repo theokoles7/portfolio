@@ -2,47 +2,114 @@
 
 div.nav-bar{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
-    max-width: 90%;
+    max-width: 70%;
     margin: 0 auto;
     padding: .25em;
-    border-bottom: $gray2 double 7px;
 
-    div.nav-left{
+    hr.single{
+        width: 100%;
+        margin: 0;
+        border-bottom: $gray2 solid 1px;
+    }
+
+    hr.double{
+        width: 100%;
+        margin: 0;
+        border-bottom: $gray2 double 4px;
+    }
+
+    div.nav-upper{
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
     
-        width: 40%;
-        padding: .25em;
+        width: 100%;
+
+        div.wing{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            width: 30%;
+
+            div.scroll-wheel{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                overflow: hidden;
+
+                height: 50%;
+
+                div.scroll-text{
+                    display: flex;
+                    align-items: center;
+                    color: $gray2;
+                    white-space: nowrap;
+
+                    transform: translateX(-100%);
+                    animation: scroll 170s linear infinite;
+                }
+
+                @keyframes scroll {
+                    from { -moz-transform: translateX(5%); }
+                    to { -moz-transform: translateX(-100%); }
+                  }
+            }
+
+            div.profiles{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+
+                height: 50%;
+
+                a.profile-link{
+                    display: flex;
+                    align-items: center;
+                    color: $gray2;
+
+                    transition: all 0.5s ease-in-out;
+
+                    &:hover{
+                        cursor: pointer;
+                        color: $white;
+                        text-shadow: 0 0 10px $gray2;
+                    }
+                }
+            }
+        }
 
         h1.name{
             font-family: gothic_sketch;
-            font-size: 450%;
+            font-size: 350%;
             font-weight: 100;
-            white-space: nowrap;
             text-align: center;
-            color: $gray2;
+            white-space: nowrap;
 
-            margin: 0;
+            color: $gray1;
+
+            margin: 0 .5em 0 .5em;
 
             transition: all 0.5s ease-in-out;
 
-            &:hover{
+            &:hover, &.active{
                 cursor: pointer;
-                color: $gray1;
+                color: $white;
                 text-shadow: 0 0 10px $gray2;
             }
         }
     }
 
-    div.nav-right{
+    div.nav-lower{
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
     
-        width: 60%;
+        width: 100%;
         padding: .25em;
     }
 }
