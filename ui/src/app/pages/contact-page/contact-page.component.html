@@ -1,5 +1,53 @@
 <div class="frame">
 
-    <form action="https://formspree.io/f/mlezazoj" method="POST"></form>
+    <div class="upper">
+  
+      <h2 class="header">Send a message:</h2>
+  
+    </div>
+  
+    <form action="https://formspree.io/f/mlezazoj" method="POST">
+  
+      <div class="middle">
+  
+        <div class="field" id="name">
 
-</div>
+          <input id="name" type="text" name="name" class="field-input" placeholder="Name" required>
+
+        </div>
+
+        <div class="field" id="email">
+
+          <input id="email" type="email" name="email" class="field-input" placeholder="E-mail Address" required>
+
+        </div>
+  
+        <div class="field" id="message">
+
+          <div class="presets">
+        
+            <button type="button" class="preset" (click)="insertTemplate('resume')">Résumé Request</button>
+            |
+            <button type="button" class="preset" (click)="insertTemplate('collab')">Collaboration Offer</button>
+            |
+            <button type="button" class="preset" (click)="insertTemplate('feedback')">Provide Feedback</button>
+        
+          </div>
+  
+          <textarea id="message" name="message" class="field-input" placeholder="Message" rows="10" required>{{message}}</textarea>
+  
+        </div>
+  
+      </div>
+  
+      <div class="lower">
+  
+        <button type="reset" id="clear" (click)="insertTemplate('none')">Clear</button>
+  
+        <button type="submit" id="send">Send</button>
+  
+      </div>
+  
+    </form>
+  
+  </div>
