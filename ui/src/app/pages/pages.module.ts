@@ -13,7 +13,6 @@ import { VitaPageComponent } from './vita-page/vita-page.component';
 import { HistoryPageComponent } from './history-page/history-page.component';
 import { QuizzlerPageComponent } from './quizzler-page/quizzler-page.component';
 import { DrSudokuPageComponent } from './dr-sudoku-page/dr-sudoku-page.component';
-import { LicensePageComponent } from './license-page/license-page.component';
 
 
 
@@ -28,8 +27,7 @@ import { LicensePageComponent } from './license-page/license-page.component';
     VitaPageComponent,
     HistoryPageComponent,
     QuizzlerPageComponent,
-    DrSudokuPageComponent,
-    LicensePageComponent
+    DrSudokuPageComponent
   ],
   imports: [
     AppRoutingModule,
