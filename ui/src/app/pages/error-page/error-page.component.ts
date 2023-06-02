@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./error-page.component.scss']
 })
 export class ErrorPageComponent implements OnInit {
+  context!:string;
 
   constructor() { }
 
   ngOnInit(): void {
+    this.context = window.location.pathname;
   }
 
 }
