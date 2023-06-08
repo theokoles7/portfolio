@@ -73,17 +73,20 @@ div.frame{
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-start;
+                color: $gray2;
 
                 margin: 1em 0;
                 
                 width: 100%;
 
                 input, textarea{
+                    background-color: transparent;
                     border: none;
                     outline: solid 1px $gray2;
-                    background-color: transparent;
-                    font-size: 1em;
+
                     color: $gray2;
+                    font-family: regular_text;
+                    font-size: 1em;
 
                     transition: all 0.5s ease-in-out;
 

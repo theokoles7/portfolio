@@ -3,8 +3,17 @@
 div.frame{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 
-    max-width: 90%;
+    max-width: 70%;
     margin: 0 auto;
     padding: .25em;
+
+    gt-side-nav-bar{
+        width: 15%;
+    }
+
+    div.router-outlet{
+        width: 80%;
+    }
 }

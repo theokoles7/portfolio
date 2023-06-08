@@ -27,14 +27,14 @@
           <div class="presets">
         
             <button type="button" class="preset" (click)="insertTemplate('resume')">Résumé Request</button>
-            |
+            <div class="separator">|</div>
             <button type="button" class="preset" (click)="insertTemplate('collab')">Collaboration Offer</button>
-            |
+            <div class="separator">|</div>
             <button type="button" class="preset" (click)="insertTemplate('feedback')">Provide Feedback</button>
         
           </div>
   
-          <textarea id="message" name="message" class="field-input" placeholder="Message" rows="10" required>{{message}}</textarea>
+          <textarea id="message" name="message" class="field-input" placeholder="Message" rows="10" autocomplete="on" spellcheck="true" required>{{message}}</textarea>
   
         </div>
   
