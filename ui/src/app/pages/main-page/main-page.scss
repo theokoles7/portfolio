@@ -1,0 +1,277 @@
+@use "../../../styles" as *;
+
+div.page {
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 3em 1.5em;
+
+    hr.divider {
+        border: none;
+        border-bottom: $gray3 solid 1px;
+        margin: 0;
+    }
+
+    hr.divider-double {
+        border: none;
+        border-bottom: $gray2 double 4px;
+        margin: 0;
+    }
+
+    // ─── Shared ─────────────────────────────────────────────
+
+    div.section-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 1em;
+        padding-bottom: 0.5em;
+        border-bottom: $gray3 solid 1px;
+
+        span.section-label {
+            font-family: primary;
+            font-size: 0.7em;
+            font-weight: bold;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: $gray3;
+        }
+
+        a.section-link {
+            font-family: primary;
+            font-size: 0.65em;
+            font-weight: bold;
+            letter-spacing: 0.1em;
+            text-decoration: none;
+            color: $gray3;
+            transition: color 0.3s ease;
+
+            &:hover { color: $white; }
+        }
+    }
+
+    // ─── Hero ───────────────────────────────────────────────
+
+    div.hero {
+        text-align: center;
+        padding-bottom: 2em;
+
+        div.hero-eyebrow {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1em;
+            margin-bottom: 0.75em;
+
+            hr.divider { flex: 1; }
+
+            span.hero-label {
+                font-family: primary;
+                font-size: 0.7em;
+                font-weight: bold;
+                letter-spacing: 0.25em;
+                text-transform: uppercase;
+                color: $gray3;
+                white-space: nowrap;
+            }
+        }
+
+        h1.hero-name {
+            font-family: gothic_sketch;
+            font-size: 5em;
+            font-weight: 100;
+            color: $gray1;
+            margin: 0 0 0.2em 0;
+            line-height: 1;
+        }
+
+        p.hero-descriptor {
+            font-family: regular_text;
+            font-size: 0.9em;
+            color: $gray3;
+            letter-spacing: 0.05em;
+            margin: 0 0 1.25em 0;
+        }
+    }
+
+    // ─── Featured grid ──────────────────────────────────────
+
+    div.featured {
+        display: grid;
+        grid-template-columns: 1.6fr 1fr;
+        gap: 0;
+        padding: 2em 0;
+
+        // Lead story (Research)
+        div.lead-story {
+            padding-right: 2.5em;
+            border-right: $gray3 solid 1px;
+
+            a.paper-item {
+                display: block;
+                padding: 1em 0;
+                border-bottom: $gray3 solid 1px;
+                text-decoration: none;
+                transition: all 0.3s ease;
+
+                div.paper-meta {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 0.75em;
+                    align-items: center;
+                    margin-bottom: 0.4em;
+
+                    span.paper-venue {
+                        font-family: primary;
+                        font-size: 0.6em;
+                        font-weight: bold;
+                        letter-spacing: 0.15em;
+                        text-transform: uppercase;
+                        color: $gray3;
+                        border: $gray3 solid 1px;
+                        padding: 0.15em 0.5em;
+                        transition: all 0.3s ease;
+                    }
+
+                    span.paper-year {
+                        font-family: primary;
+                        font-size: 0.65em;
+                        color: $gray3;
+                        transition: color 0.3s ease;
+                    }
+                }
+
+                h2.paper-title {
+                    font-family: primary;
+                    font-size: 0.95em;
+                    font-weight: bold;
+                    color: $gray1;
+                    margin: 0 0 0.3em 0;
+                    transition: color 0.3s ease;
+                }
+
+                p.paper-authors {
+                    font-family: regular_text;
+                    font-size: 0.78em;
+                    font-style: italic;
+                    color: $gray3;
+                    margin: 0;
+                    transition: color 0.3s ease;
+                }
+
+                &:hover {
+                    h2.paper-title   { color: $white; }
+                    p.paper-authors  { color: $gray2; }
+                    span.paper-venue { color: $gray1; border-color: $gray1; }
+                    span.paper-year  { color: $gray2; }
+                }
+            }
+        }
+
+        // Side column (Projects + Art)
+        div.side-column {
+            padding-left: 2.5em;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5em;
+
+            hr.divider { margin: 0; }
+
+            div.side-section {
+
+                a.side-item {
+                    display: block;
+                    padding: 0.75em 0;
+                    border-bottom: $gray3 solid 1px;
+                    text-decoration: none;
+                    transition: all 0.3s ease;
+
+                    h3.side-item-title {
+                        font-family: primary;
+                        font-size: 0.85em;
+                        font-weight: bold;
+                        color: $gray1;
+                        margin: 0 0 0.25em 0;
+                        transition: color 0.3s ease;
+                    }
+
+                    p.side-item-description {
+                        font-family: regular_text;
+                        font-size: 0.8em;
+                        line-height: 1.5;
+                        color: $gray3;
+                        margin: 0;
+                        transition: color 0.3s ease;
+                    }
+
+                    &:hover {
+                        h3.side-item-title       { color: $white; }
+                        p.side-item-description  { color: $gray2; }
+                    }
+                }
+
+                div.art-item {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 1em;
+                    padding: 0.75em 0;
+                    border-bottom: $gray3 solid 1px;
+
+                    div.art-item-label {
+                        flex: 1;
+
+                        h3.side-item-title {
+                            font-family: primary;
+                            font-size: 0.85em;
+                            font-weight: bold;
+                            color: $gray1;
+                            margin: 0 0 0.2em 0;
+                        }
+
+                        span.art-year {
+                            font-family: primary;
+                            font-size: 0.65em;
+                            letter-spacing: 0.1em;
+                            color: $gray3;
+                        }
+                    }
+
+                    img.art-thumb {
+                        width: 55px;
+                        height: 55px;
+                        object-fit: cover;
+                        filter: grayscale(30%);
+                        transition: filter 0.3s ease;
+
+                        &:hover { filter: grayscale(0%); }
+                    }
+                }
+            }
+        }
+    }
+
+    // ─── Footer nudge ───────────────────────────────────────
+
+    div.footer-nudge {
+        padding-top: 1.5em;
+        text-align: center;
+
+        p {
+            font-family: regular_text;
+            font-size: 0.85em;
+            color: $gray3;
+            margin: 0;
+        }
+
+        a.footer-link {
+            color: $gray2;
+            text-decoration: none;
+            margin-left: 0.4em;
+            transition: color 0.3s ease;
+
+            &:hover { color: $white; }
+        }
+    }
+}

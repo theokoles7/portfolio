@@ -1,0 +1,52 @@
+@use "../../../styles" as *;
+
+div.cv, div.history {
+
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+
+    hr.divider {
+        border: none;
+        border-bottom: $gray3 solid 1px;
+        margin: 0 0 1.5em 0;
+    }
+
+    div.history-section {
+
+        span.section-label {
+            display: block;
+            font-family: regular_text;
+            font-size: 0.7em;
+            font-weight: bold;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: $gray3;
+            margin-bottom: 0.4em;
+        }
+
+        h2.section-title {
+            font-family: regular_text;
+            font-size: 2em;
+            font-weight: 100;
+            color: $gray1;
+            margin: 0 0 0.75em 0;
+        }
+
+        // History body text
+        div.section-body {
+            p {
+                font-family: regular_text;
+                font-size: 0.95em;
+                text-align: justify;
+                line-height: 1.8;
+                color: $gray2;
+                margin: 0 0 1em 0;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

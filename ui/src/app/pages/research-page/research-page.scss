@@ -1,0 +1,134 @@
+@use "../../../styles" as *;
+
+div.page {
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 3em 1.5em;
+
+    hr.divider {
+        border: none;
+        border-bottom: $gray3 solid 1px;
+        margin: 0 0 2.5em 0;
+    }
+
+    div.page-header {
+
+        span.section-label {
+            display: block;
+            font-family: primary;
+            font-size: 0.7em;
+            font-weight: bold;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: $gray2;
+            margin-bottom: 0.5em;
+        }
+
+        h1.page-title {
+            font-family: regular_text;
+            font-size: 3em;
+            font-weight: 100;
+            color: $white;
+            margin: 0 0 0.75em 0;
+        }
+    }
+
+    div.page-body {
+        display: flex;
+        flex-direction: column;
+
+        a.paper-card {
+            display: block;
+            position: relative;
+            padding: 1.75em 0;
+            border-bottom: $gray3 solid 1px;
+            text-decoration: none;
+            cursor: pointer;
+
+            transition: all 0.3s ease;
+
+            div.card-meta {
+                display: flex;
+                flex-direction: row;
+                gap: 1em;
+                align-items: center;
+                margin-bottom: 0.6em;
+
+                span.card-venue {
+                    font-family: primary;
+                    font-size: 0.65em;
+                    font-weight: bold;
+                    letter-spacing: 0.15em;
+                    text-transform: uppercase;
+                    color: $gray2;
+                    border: $gray3 solid 1px;
+                    padding: 0.2em 0.6em;
+                    transition: all 0.3s ease;
+                }
+
+                span.card-year {
+                    font-family: primary;
+                    font-size: 0.7em;
+                    letter-spacing: 0.1em;
+                    color: $gray2;
+                    transition: color 0.3s ease;
+                }
+            }
+
+            h2.card-title {
+                font-family: primary;
+                font-size: 1.05em;
+                font-weight: bold;
+                color: $gray1;
+                margin: 0 0 0.4em 0;
+                transition: color 0.3s ease;
+            }
+
+            p.card-authors {
+                font-family: regular_text;
+                font-size: 0.8em;
+                font-style: italic;
+                color: $gray2;
+                margin: 0 0 0.75em 0;
+                transition: color 0.3s ease;
+            }
+
+            p.card-description {
+                font-family: regular_text;
+                font-size: 0.9em;
+                line-height: 1.7;
+                color: $gray1;
+                margin: 0;
+                transition: color 0.3s ease;
+            }
+
+            span.card-arrow {
+                position: absolute;
+                top: 1.75em;
+                right: 0;
+                font-size: 1.1em;
+                color: $gray1;
+                transition: all 0.3s ease;
+            }
+
+            &:hover {
+                div.card-meta {
+                    span.card-venue {
+                        color: $gray1;
+                        border-color: $gray1;
+                    }
+                    span.card-year { color: $gray1; }
+                }
+
+                h2.card-title      { color: $white; }
+                p.card-authors     { color: $gray1; }
+                p.card-description { color: $gray1; }
+
+                span.card-arrow {
+                    color: $white;
+                    top: 1.5em;
+                }
+            }
+        }
+    }
+}

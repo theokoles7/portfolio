@@ -1,0 +1,24 @@
+@use "../../../styles.scss" as *;
+
+button.nav-button{
+    background-color: transparent;
+    border: none;
+
+    color: $gray2;
+    font-family: primary;
+    font-size: 1em;
+    font-weight: bold;
+
+    transition: all 0.5s ease-in-out;
+
+    &:hover{
+        cursor: pointer;
+        color: $gray1;
+        text-shadow: 0 0 2px $gray2;
+    }
+
+    &.active{
+        color: $white;
+        text-shadow: 0 0 2px $gray1;
+    }
+}

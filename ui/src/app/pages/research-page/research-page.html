@@ -1,0 +1,37 @@
+<div class="page">
+
+    <div class="page-header">
+        
+        <h1 class="page-title">Research</h1>
+
+        <hr class="divider">
+
+    </div>
+
+    <div class="page-body">
+
+        @for (paper of papers; track paper.title) {
+            <a class="paper-card" [href]="paper.url" target="_blank" rel="noopener noreferrer">
+
+                <div class="card-meta">
+
+                    <span class="card-venue">{{ paper.venue }}</span>
+
+                    <span class="card-year">{{ paper.year }}</span>
+
+                </div>
+
+                <h2 class="card-title">{{ paper.title }}</h2>
+
+                <p class="card-authors">{{ paper.authors }}</p>
+
+                <p class="card-description">{{ paper.description }}</p>
+
+                <span class="card-arrow">↗</span>
+
+            </a>
+        }
+
+    </div>
+
+</div>

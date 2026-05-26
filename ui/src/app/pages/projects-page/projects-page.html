@@ -1,0 +1,31 @@
+<div class="page">
+
+    <div class="page-header">
+        
+        <h1 class="page-title">Projects</h1>
+
+        <hr class="divider">
+
+    </div>
+
+    <div class="page-body">
+
+        @for (project of projects; track project.route) {
+            <div class="project-card" [routerLink]="'/projects/' + project.route">
+
+                <div class="card-content">
+
+                    <h2 class="card-title">{{ project.title }}</h2>
+
+                    <p class="card-description">{{ project.description }}</p>
+
+                </div>
+
+                <span class="card-arrow">→</span>
+
+            </div>
+        }
+
+    </div>
+
+</div>

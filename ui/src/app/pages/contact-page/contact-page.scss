@@ -1,0 +1,169 @@
+@use "../../../styles" as *;
+
+div.page {
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 3em 1.5em;
+
+    div.page-header {
+        margin-bottom: 2.5em;
+
+        span.section-label {
+            display: block;
+            font-family: primary;
+            font-size: 0.7em;
+            font-weight: bold;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: $white;
+            margin-bottom: 0.5em;
+        }
+
+        h1.page-title {
+            font-family: regular_text;
+            font-size: 3em;
+            font-weight: 100;
+            color: $white;
+            margin: 0 0 0.25em 0;
+        }
+
+        p.page-subtitle {
+            font-family: regular_text;
+            font-size: 1em;
+            color: $gray3;
+            margin: 0 0 1.5em 0;
+        }
+
+        hr.divider {
+            border: none;
+            border-bottom: $gray3 solid 1px;
+            margin: 0;
+        }
+    }
+
+    div.page-body {
+
+        form.contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.75em;
+
+            div.field-row {
+                display: flex;
+                flex-direction: row;
+                gap: 1.5em;
+
+                div.field {
+                    flex: 1;
+                }
+            }
+
+            div.field {
+                display: flex;
+                flex-direction: column;
+                gap: 0.4em;
+
+                label.field-label {
+                    font-family: primary;
+                    font-size: 0.75em;
+                    font-weight: bold;
+                    letter-spacing: 0.15em;
+                    text-transform: uppercase;
+                    color: $gray2;
+                }
+
+                .field-input {
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: $gray3 solid 1px;
+                    color: $gray1;
+                    font-family: regular_text;
+                    font-size: 1em;
+                    padding: 0.5em 0;
+                    outline: none;
+                    width: 100%;
+                    transition: border-color 0.3s ease;
+
+                    &::placeholder {
+                        color: $gray3;
+                    }
+
+                    &:focus {
+                        border-bottom-color: $gray1;
+                    }
+                }
+
+                textarea.field-input {
+                    resize: vertical;
+                }
+            }
+
+            div.bottom{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 1em;
+                padding-top: 0.5em;
+                // border-top: $gray3 solid 1px;
+
+                div.disclaimer{
+                    color: $gray3;
+                    padding-top: 0.5em;
+
+                    a{
+                        color: $gray3;
+                        text-decoration: none;
+
+                        transition: all 0.3s ease-in-out;
+
+                        &:hover {
+                            color: $white;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                div.form-actions {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    gap: 1em;
+                    padding-top: 0.5em;
+
+                    button.btn {
+                        background-color: transparent;
+                        border: none;
+                        font-family: primary;
+                        font-size: 0.8em;
+                        font-weight: bold;
+                        letter-spacing: 0.15em;
+                        text-transform: uppercase;
+                        padding: 0.5em 1.5em;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+                    }
+
+                    button.btn-clear {
+                        color: $gray3;
+                        border: $gray3 solid .1em;
+
+                        &:hover {
+                            color: $gray1;
+                            border-color: $gray1;
+                        }
+                    }
+
+                    button.btn-send {
+                        color: $black;
+                        background-color: $gray1;
+
+                        &:hover {
+                            background-color: $white;
+                            color: $black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+<div class="page">
+
+    <div class="hero">
+
+        <div class="hero-eyebrow">
+            <hr class="divider">
+            <span class="hero-label">Portfolio</span>
+            <hr class="divider">
+        </div>
+
+        <p class="hero-descriptor">
+            PhD Candidate &nbsp;·&nbsp; Machine Learning Researcher &nbsp;·&nbsp; AI Solutions Architect
+        </p>
+
+        <hr class="divider-double">
+
+    </div>
+
+    <div class="featured">
+
+        <!-- Lead story: Research -->
+        <div class="lead-story">
+
+            <div class="section-header">
+                <span class="section-label">Research</span>
+                <a class="section-link" routerLink="/research">View all →</a>
+            </div>
+
+            @for (paper of papers; track paper.title) {
+                <a class="paper-item" [href]="paper.url" target="_blank" rel="noopener noreferrer">
+                    <div class="paper-meta">
+                        <span class="paper-venue">{{ paper.venue }}</span>
+                        <span class="paper-year">{{ paper.year }}</span>
+                    </div>
+                    <h2 class="paper-title">{{ paper.title }}</h2>
+                    <p class="paper-authors">{{ paper.authors }}</p>
+                </a>
+            }
+
+        </div>
+
+        <!-- Side column: Projects + Art -->
+        <div class="side-column">
+
+            <div class="side-section">
+
+                <div class="section-header">
+                    <span class="section-label">Projects</span>
+                    <a class="section-link" routerLink="/projects">View all →</a>
+                </div>
+
+                @for (project of projects; track project.route) {
+                    <a class="side-item" [routerLink]="'/projects/' + project.route">
+                        <h3 class="side-item-title">{{ project.title }}</h3>
+                        <p class="side-item-description">{{ project.description }}</p>
+                    </a>
+                }
+
+            </div>
+
+            <!-- <hr class="divider-double"> -->
+
+            <div class="side-section">
+
+                <div class="section-header">
+                    <span class="section-label">Art</span>
+                    <a class="section-link" routerLink="/art">View all →</a>
+                </div>
+
+                @for (piece of art; track piece.id) {
+                    <div class="art-item">
+                        <div class="art-item-label">
+                            <h3 class="side-item-title">{{ piece.title }}</h3>
+                            <span class="art-year">{{ piece.year }}</span>
+                        </div>
+                        <img class="art-thumb" [src]="piece.image" [alt]="piece.title">
+                    </div>
+                }
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr class="divider-double">
+
+    <div class="footer-nudge">
+        <p>
+            Interested in collaborating or just want to say hello?
+            <a class="footer-link" routerLink="/contact">Get in touch →</a>
+        </p>
+    </div>
+
+</div>

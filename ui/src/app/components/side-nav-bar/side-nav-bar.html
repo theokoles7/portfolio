@@ -1,0 +1,15 @@
+<div class="wrapper">
+
+    <ul class="child-list">
+
+        @for (child of children; track child.name) {
+            <li class="child">
+
+                <app-side-nav-button [name]="child.name" [context]="child.context"></app-side-nav-button>
+                
+            </li>
+        }
+
+    </ul>
+
+</div>

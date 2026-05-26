@@ -1,0 +1,70 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+
+//---------------------------------------------------------- COLOR PALETTES
+// NEUTRALS
+$white: #EEE;
+$gray1: #CCC;
+$gray2: #AAA;
+$gray3: #777;
+$black: #111;
+
+// THEME
+$navy:        #142d4c;
+$blue-chalk:  #385170;
+$mint:        #9fd3c7;
+$lilac:       #ececec;
+
+//---------------------------------------------------------- FONTS
+// Logo Font
+@font-face {
+    font-family: gothic_sketch;
+    src: url("../public/fonts/gothic_sketch.ttf") format('truetype');
+    font-style: normal;
+}
+
+// Titles & Headers
+@font-face {
+    font-family: primary;
+    src: url("../public/fonts/primary.ttf") format('truetype');
+    font-style: normal;
+}
+
+// Paragraph text
+@font-face {
+      font-family: regular_text;
+      src: url("../public/fonts/regular_text.ttf") format('truetype');
+      font-style: normal;
+}
+
+// Typewriter
+@font-face {
+      font-family: typewriter;
+      src: url("../public/fonts/typewriter.ttf") format('truetype');
+      font-style: normal;
+}
+
+//---------------------------------------------------------- ANIMATIONS
+
+::view-transition-old(root) {
+  animation: 300ms ease-in-out fade-out;
+  animation-delay: 300ms;
+}
+
+::view-transition-new(root) {
+  animation: 500ms ease-in-out fade-in;
+}
+
+::view-transition-image-pair(root) {
+  background-color: $black;
+}
+
+@keyframes fade-out {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}

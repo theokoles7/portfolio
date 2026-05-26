@@ -1,0 +1,77 @@
+<div class="page">
+
+    <div class="page-header">
+        <h1 class="page-title">Dr. Sudoku</h1>
+
+        <div class="page-links">
+            <a class="page-link" href="https://github.com/theokoles7/Dr-Sudoku" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-github"></i> GitHub
+            </a>
+            <a class="page-link" href="https://theokoles7.github.io/Dr-Sudoku/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-arrow-right-square-fill"></i> Live Demo
+            </a>
+        </div>
+
+        <hr class="divider">
+    </div>
+
+    <div class="page-body">
+
+        <div class="project-section">
+            <h2 class="section-title">Description</h2>
+            <hr class="divider">
+            <p>
+                This app started as my senior project for my undergraduate program, where I implemented
+                the classic backtracking algorithm in Java and applied it to Sudoku puzzles. On top of
+                the classic version, I implemented an enhanced version utilizing pencil marked candidates,
+                as well as a human-inspired version employing techniques such as single blanks, naked
+                candidates, and x-wing. My goal was to determine how many human techniques could be
+                integrated into the algorithm before its efficiency became impractical.
+            </p>
+            <p>
+                To my surprise, the original version was not able to handle the overhead of more than
+                one technique being integrated — run times became astronomically higher, and sometimes
+                the puzzle wouldn't even be solved. Fortunately, I revisited the work after the
+                assignment was complete and found ways to improve the algorithm further, add more
+                techniques, and prevent it from breaking down under the overhead. The result not only
+                improved on the original, but consistently beats the enhanced backtrack algorithm
+                except in special edge cases.
+            </p>
+        </div>
+
+        <img class="project-image" src="images/projects/backtrack.gif" alt="Backtracking algorithm animation">
+
+        <div class="project-section">
+            <h2 class="section-title">Lessons Learned</h2>
+            <hr class="divider">
+            <p>
+                There is no doubt that I learned harder lessons about time management throughout this
+                project, due to it being a school assignment. I initially set the scope to be minimal —
+                just the algorithms running in Java in a terminal. I considered creating an animated
+                user interface at the beginning and decided against it, not believing I would have
+                enough time. As I learned afterward, I had gotten comfortable enough in front-end
+                development that it didn't take long at all.
+            </p>
+            <p>
+                I'll always wish I had built the interface for the assignment so my presentation had
+                more of a "wow" factor, but at least I know now. This project also tested my algorithm
+                writing skills considerably, and I'd argue that my implementation capabilities are much
+                stronger because of it.
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h2 class="section-title">Tools Used</h2>
+            <hr class="divider">
+            <p>
+                The animated interface was built using Angular with HTML, SCSS, and TypeScript. The
+                only styling library used is
+                <a class="inline-link" href="https://icons.getbootstrap.com/" target="_blank" rel="noopener noreferrer">Bootstrap Icons</a>.
+                The algorithms were originally written in Java before being translated to TypeScript.
+                GitHub Pages is used for deployment.
+            </p>
+        </div>
+
+    </div>
+
+</div>

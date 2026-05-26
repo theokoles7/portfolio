@@ -1,0 +1,200 @@
+@use "../../../styles" as *;
+
+div.cv, div.history {
+
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+
+    hr.divider {
+        border: none;
+        border-bottom: $gray3 solid 1px;
+        margin: 0 0 1.5em 0;
+    }
+
+    div.cv-section, div.history-section {
+
+        span.section-label {
+            display: block;
+            font-family: primary;
+            font-size: 0.7em;
+            font-weight: bold;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: $gray3;
+            margin-bottom: 0.4em;
+        }
+
+        h2.section-title {
+            font-family: primary;
+            font-size: 2em;
+            font-weight: 100;
+            color: $white;
+            margin: 0 0 0.75em 0;
+        }
+
+        // CV entries
+        div.cv-entries {
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+
+            div.cv-company {
+
+                div.cv-company-header {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: baseline;
+
+                    h3.cv-company-name {
+                        font-family: regular_text;
+                        font-size: 1.5em;
+                        font-weight: 100;
+                        color: $gray1;
+                        margin: 0;
+                    }
+                }
+
+                span.cv-entry-subtitle {
+                    display: block;
+                    font-family: regular_text;
+                    font-size: 0.85em;
+                    color: $gray3;
+                    margin: 0.2em 0 1em 0;
+                    font-style: italic;
+                }
+
+                div.cv-roles {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.25em;
+                    padding-left: 1.25em;
+                    border-left: $gray3 solid 1px;
+
+                    div.cv-role {
+
+                        div.cv-entry-header {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: baseline;
+
+                            h4.cv-role-title {
+                                font-family: primary;
+                                font-size: 0.95em;
+                                font-weight: bold;
+                                color: $gray2;
+                                margin: 0;
+                                font-style: italic;
+                            }
+                        }
+
+                        p.cv-entry-body {
+                            font-family: regular_text;
+                            font-size: 0.9em;
+                            line-height: 1.7;
+                            color: $gray2;
+                            margin: 0.4em 0 0 0;
+                        }
+                    }
+                }
+            }
+
+            div.cv-entry, div.cv-role {
+
+                div.cv-entry-header {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: baseline;
+
+                    h3.cv-entry-title {
+                        font-family: primary;
+                        font-size: 1em;
+                        font-weight: bold;
+                        color: $gray1;
+                        margin: 0;
+                    }
+
+                    span.cv-entry-date {
+                        font-family: primary;
+                        font-size: 0.7em;
+                        letter-spacing: 0.1em;
+                        color: $gray1;
+                    }
+                }
+
+                span.cv-entry-subtitle {
+                    display: block;
+                    font-family: regular_text;
+                    font-size: 0.85em;
+                    color: $gray3;
+                    margin: 0.2em 0 0.6em 0;
+                    font-style: italic;
+                }
+
+                p.cv-entry-body {
+                    font-family: regular_text;
+                    font-size: 0.9em;
+                    line-height: 1.7;
+                    color: $gray2;
+                    margin: 0;
+                }
+            }
+        }
+
+        // Skills grid
+        div.skills-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2em;
+
+            div.skill-group {
+
+                h4.skill-group-title {
+                    font-family: primary;
+                    font-size: 0.75em;
+                    font-weight: bold;
+                    letter-spacing: 0.15em;
+                    text-transform: uppercase;
+                    color: $gray2;
+                    margin: 0 0 0.75em 0;
+                }
+
+                ul.skill-list {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+
+                    li {
+                        font-family: regular_text;
+                        font-size: 0.9em;
+                        color: $gray3;
+                        padding: 0.3em 0;
+                        border-bottom: $black solid 1px;
+
+                        &:last-child {
+                            border-bottom: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        // History body text
+        div.section-body {
+            p {
+                font-family: regular_text;
+                font-size: 0.95em;
+                line-height: 1.8;
+                color: $gray2;
+                margin: 0 0 1em 0;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

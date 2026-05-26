@@ -1,0 +1,130 @@
+@use "../../../styles" as *;
+
+div.page {
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 3em 1.5em;
+
+    hr.divider {
+        border: none;
+        border-bottom: $gray3 solid 1px;
+        margin: 0;
+    }
+
+    div.page-header {
+        margin-bottom: 2.5em;
+
+        span.section-label {
+            display: block;
+            font-family: primary;
+            font-size: 0.7em;
+            font-weight: bold;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: $gray3;
+            margin-bottom: 0.5em;
+        }
+
+        h1.page-title {
+            font-family: regular_text;
+            font-size: 3em;
+            font-weight: 100;
+            color: $gray1;
+            margin: 0 0 0.5em 0;
+        }
+
+        div.page-links {
+            display: flex;
+            flex-direction: row;
+            gap: 1.5em;
+            margin-bottom: 1em;
+
+            a.page-link {
+                font-family: primary;
+                font-size: 0.75em;
+                font-weight: bold;
+                letter-spacing: 0.1em;
+                text-decoration: none;
+                color: $gray2;
+                transition: color 0.3s ease;
+
+                &:hover { color: $white; }
+            }
+        }
+    }
+
+    div.page-body {
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+
+        div.project-section {
+
+            img.project-image {
+                float: right;
+                margin: 0 0 1em 1.5em;
+                max-width: 45%;
+                height: auto;
+                filter: grayscale(15%);
+                transition: filter 0.4s ease;
+
+                &:hover { filter: grayscale(0%); }
+            }
+
+            span.section-label {
+                display: block;
+                font-family: primary;
+                font-size: 0.7em;
+                font-weight: bold;
+                letter-spacing: 0.2em;
+                text-transform: uppercase;
+                color: $gray3;
+                margin-bottom: 0.4em;
+            }
+
+            h2.section-title {
+                font-family: primary;
+                font-size: 2em;
+                font-weight: 100;
+                color: $gray1;
+                margin: 0 0 0.75em 0;
+            }
+
+            p {
+                font-family: regular_text;
+                font-size: 0.95em;
+                line-height: 1.8;
+                color: $gray2;
+                margin: 0 0 1em 0;
+
+                &:last-of-type { margin-bottom: 0; }
+            }
+
+            a.inline-link {
+                color: $gray1;
+                text-decoration: underline;
+                text-underline-offset: 3px;
+                transition: color 0.3s ease;
+
+                &:hover { color: $white; }
+            }
+
+            img.project-image {
+                display: block;
+                max-width: 100%;
+                height: auto;
+                margin-top: .5em;
+                filter: grayscale(15%);
+                transition: filter 0.4s ease;
+
+                &:hover { filter: grayscale(0%); }
+            }
+    
+            &::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+        }
+    }
+}
